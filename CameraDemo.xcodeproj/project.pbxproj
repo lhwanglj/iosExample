@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E8D33151F2222C800E1F00F /* H264HwEncoderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D33141F2222C800E1F00F /* H264HwEncoderImpl.m */; };
 		6E9D24471F20430E00AC7ACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D24461F20430E00AC7ACC /* main.m */; };
 		6E9D244A1F20430E00AC7ACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D24491F20430E00AC7ACC /* AppDelegate.m */; };
 		6E9D244D1F20430E00AC7ACC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D244C1F20430E00AC7ACC /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		6E9D24551F20430E00AC7ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9D24531F20430E00AC7ACC /* LaunchScreen.storyboard */; };
 		6E9D24601F20430E00AC7ACC /* CameraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D245F1F20430E00AC7ACC /* CameraDemoTests.m */; };
 		6E9D246B1F20430E00AC7ACC /* CameraDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D246A1F20430E00AC7ACC /* CameraDemoUITests.m */; };
+		6E9D247B1F209D9B00AC7ACC /* STGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D247A1F209D9B00AC7ACC /* STGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E8D33131F2222C800E1F00F /* H264HwEncoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264HwEncoderImpl.h; sourceTree = "<group>"; };
+		6E8D33141F2222C800E1F00F /* H264HwEncoderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264HwEncoderImpl.m; sourceTree = "<group>"; };
 		6E9D24421F20430E00AC7ACC /* CameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D24461F20430E00AC7ACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E9D24481F20430E00AC7ACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		6E9D24661F20430E00AC7ACC /* CameraDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D246A1F20430E00AC7ACC /* CameraDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDemoUITests.m; sourceTree = "<group>"; };
 		6E9D246C1F20430E00AC7ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9D24791F209D9B00AC7ACC /* STGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGLView.h; sourceTree = "<group>"; };
+		6E9D247A1F209D9B00AC7ACC /* STGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E8D33121F2222C800E1F00F /* H264HwEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D33131F2222C800E1F00F /* H264HwEncoderImpl.h */,
+				6E8D33141F2222C800E1F00F /* H264HwEncoderImpl.m */,
+			);
+			path = H264HwEncoder;
+			sourceTree = "<group>";
+		};
 		6E9D24391F20430E00AC7ACC = {
 			isa = PBXGroup;
 			children = (
+				6E8D33121F2222C800E1F00F /* H264HwEncoder */,
+				6E9D24781F209D9B00AC7ACC /* STGLView */,
 				6E9D24441F20430E00AC7ACC /* CameraDemo */,
 				6E9D245E1F20430E00AC7ACC /* CameraDemoTests */,
 				6E9D24691F20430E00AC7ACC /* CameraDemoUITests */,
@@ -138,6 +155,15 @@
 				6E9D246C1F20430E00AC7ACC /* Info.plist */,
 			);
 			path = CameraDemoUITests;
+			sourceTree = "<group>";
+		};
+		6E9D24781F209D9B00AC7ACC /* STGLView */ = {
+			isa = PBXGroup;
+			children = (
+				6E9D24791F209D9B00AC7ACC /* STGLView.h */,
+				6E9D247A1F209D9B00AC7ACC /* STGLView.m */,
+			);
+			path = STGLView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E9D244D1F20430E00AC7ACC /* ViewController.m in Sources */,
+				6E8D33151F2222C800E1F00F /* H264HwEncoderImpl.m in Sources */,
 				6E9D244A1F20430E00AC7ACC /* AppDelegate.m in Sources */,
+				6E9D247B1F209D9B00AC7ACC /* STGLView.m in Sources */,
 				6E9D24471F20430E00AC7ACC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,11 +455,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 44N96SVFP8;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wlj.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -439,11 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 44N96SVFP8;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wlj.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -516,6 +550,7 @@
 				6E9D24711F20430E00AC7ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9D24721F20430E00AC7ACC /* Build configuration list for PBXNativeTarget "CameraDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +559,7 @@
 				6E9D24741F20430E00AC7ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9D24751F20430E00AC7ACC /* Build configuration list for PBXNativeTarget "CameraDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +568,7 @@
 				6E9D24771F20430E00AC7ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
